@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topicsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="491dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:lines="1"
+            android:textColor="@color/colorAccent"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/userTV"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="Logged In as:   "
+            android:gravity="end|center"
+            android:textColor="@color/colorAccent"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/userNAmeTV"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="name"
+            android:textAllCaps="true"
+            android:gravity="start|center"
+            android:textColor="@color/colorAccent"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/btnAddTopic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+</RelativeLayout>
